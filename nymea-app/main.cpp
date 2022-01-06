@@ -28,6 +28,9 @@
 *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+fdsadas
+
+
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QtQml/QQmlContext>

@@ -111,3 +111,5 @@ TRANSLATIONS += $$files($$absolute_path(nymea-app)/translations/*.ts, true)
 system("lrelease $$TRANSLATIONS")
 lrelease.commands = lrelease $$TRANSLATIONS
 QMAKE_EXTRA_TARGETS += lrelease
+
+
