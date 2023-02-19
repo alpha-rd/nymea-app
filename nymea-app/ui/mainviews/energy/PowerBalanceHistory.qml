@@ -81,10 +81,10 @@ Item {
         target: powerBalanceLogs
 
         onEntriesAddedIdx: {
-            print("entries added", index, count)
+//            print("entries added", index, count)
             for (var i = 0; i < count; i++) {
                 var entry = powerBalanceLogs.get(index + i)
-                print("got entry", entry.timestamp)
+//                print("got entry", entry.timestamp)
 
                 zeroSeries.ensureValue(entry.timestamp)
                 // For debugging, to see if the other maths line up with the plain production graph
@@ -478,11 +478,11 @@ Item {
                         return Math.abs(Math.min(0, entry.production))
                     }
                     function addEntry(entry) {
-                        print("appending!", entry.timestamp, entry.value)
+//                        print("appending!", entry.timestamp, entry.value)
                         append(entry.timestamp.getTime(), calculateValue(entry))
                     }
                     function insertEntry(index, entry) {
-                        print("inserting!", index, entry.timestamp, entry.value)
+//                        print("inserting!", index, entry.timestamp, entry.value)
                         insert(index, entry.timestamp.getTime(), calculateValue(entry))
                     }
                 }
